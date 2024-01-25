@@ -7,7 +7,7 @@ This fork of [Edrys Module-Code](https://github.com/edrys-org/module-code) provi
 Use this URL to add the module to your class:
 
 ```
-https://cross-lab-project.github.io/edrys_module-editor/index.html
+https://edrys-labs.github.io/module-editor/index.html
 ```
 
 You may optionally specify any of the following module config, the `runCommand` is the only setting that is required:
