@@ -52,8 +52,8 @@
   </head>
 
   <body>
-    <div id="app">
-      <div style="height: 640px" v-if="!multiFileMode">
+    <div style="height: 100%; min-height: 100%" id="app">
+      <div style="height: 100%; min-height: 100%" v-if="!multiFileMode">
         <div
           id="editor"
           style="height: 100%; max-height: inherit; max-width: inherit"
@@ -125,6 +125,14 @@
           language: language,
           theme: theme,
           automaticLayout: true,
+          scrollbar: {
+            vertical: 'visible', // Always show vertical scrollbar
+            horizontal: 'auto',
+            useShadows: false,
+            verticalHasArrows: false,
+            horizontalHasArrows: false,
+            alwaysConsumeMouseWheel: false,
+          },
         })
 
         function save() {
